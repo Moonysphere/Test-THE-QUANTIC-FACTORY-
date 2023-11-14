@@ -12,12 +12,21 @@
 
 <body>
   <header>
+    <!-- titre et logo  -->
     <div class="entete">
       <img src="ressources/logo-test.png" alt="logo-test">
       <h1>Fraicheur a paris</h1>
     </div>
   </header>
+
+
+
+
+
   <main>
+
+    <!-- onglet -->
+
     <div class="tabs">
       <div class="tabs-btn-container">
         <button class="tab active-tab">
@@ -30,6 +39,9 @@
           Activiter 💪
         </button>
       </div>
+
+
+      <!-- partie fontaine  -->
       <div class="tab-content active-tab-content">
         <h3> Fontaine ⛲️</h3>
         <!-- fontaine -->
@@ -37,7 +49,7 @@
           <form id="monFormulaireFontaine">
             <label for="monFormulaireFontaine">Arrondissement :</label>
             <select id="choixNombreFontaine" name="choixNombreFontaine">
-
+              <!-- Options pour les arrondissements -->
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -60,6 +72,7 @@
               <option value="20">20</option>
             </select>
 
+            <!-- Le bouton submit du formulaire -->
             <button class="BtnSubmit" type="submit">Filtrer</button>
           </form>
         </div>
@@ -75,7 +88,7 @@
 
 
 
-
+      <!-- partie espace vert  -->
       <div class="tab-content">
         <h3>Espace vert 🌳</h3>
         <!-- espace vert -->
@@ -114,7 +127,7 @@
             </select>
 
 
-            <!-- Le bouton de soumission du formulaire -->
+            <!-- Le bouton submit du formulaire -->
             <button class="BtnSubmit" type="submit">Filtrer</button>
           </form>
         </div>
@@ -126,6 +139,9 @@
 
 
       </div>
+
+
+      <!-- espace activiter  -->
       <div class="tab-content">
         <h3> Activiter 💪</h3>
         <!-- activiter -->
@@ -155,7 +171,7 @@
               <option value="18">18</option>
               <option value="19">19</option>
               <option value="20">20</option>
-              <!-- Ajoutez d'autres options au besoin -->
+
             </select>
 
             <label for="choixTypeActiviter">Catégorie :</label>
@@ -169,7 +185,7 @@
               <!-- Les options de type seront générées dynamiquement ici -->
             </select>
 
-            <!-- Le bouton de soumission du formulaire -->
+            <!-- Le bouton submit du formulaire -->
             <button class="BtnSubmit" type="submit">Filtrer</button>
           </form>
         </div>
@@ -178,7 +194,12 @@
           <!-- Les résultats seront affichés ici -->
         </table>
   </main>
+
+
+
   <footer>
+
+    <!-- credit  -->
     <p>©Baptiste ROY 2023</p>
   </footer>
   <script src="script.js"></script>
