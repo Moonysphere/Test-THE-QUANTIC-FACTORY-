@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet">
+  <link rel="shortcut icon" href="ressources/logo-test.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div class="entete">
+      <img src="ressources/logo-test.png" alt="logo-test">
+      <h1>Fraicheur a paris</h1>
+    </div>
+  </header>
+  <main>
+    <div class="tabs">
+      <div class="tabs-btn-container">
+        <button class="tab active-tab">
+          Fontaine ⛲️
+        </button>
+        <button class="tab">
+          Espace vert 🌳
+        </button>
+        <button class="tab">
+          Activiter 💪
+        </button>
+      </div>
+      <div class="tab-content active-tab-content">
+        <h3> Fontaine ⛲️</h3>
+        <!-- fontaine -->
+        <div class="filtre">
+          <form id="monFormulaireFontaine">
+            <label for="monFormulaireFontaine">Arrondissement :</label>
+            <select id="choixNombreFontaine" name="choixNombreFontaine">
+
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+            </select>
+
+            <button class="BtnSubmit" type="submit">Filtrer</button>
+          </form>
+        </div>
+
+
+
+        <table id="resultatsFontaine">
+
+        </table>
+
+      </div>
+
+
+
+
+
+      <div class="tab-content">
+        <h3>Espace vert 🌳</h3>
+        <!-- espace vert -->
+        <div class="filtre">
+          <form id="monFormulaireVert">
+            <label for="choixNombreVert">Arrondissement :</label>
+            <select id="choixNombreVert" name="choixNombreVert">
+              <!-- Options pour les arrondissements -->
+              <option value="arrondissement">arrondissement</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+            </select>
+
+            <label for="choixTypeVert">Catégorie :</label>
+            <select id="choixTypeVert" name="choixTypeVert">
+              <option value="Tous">Tous</option>
+              <!-- Les options de type seront générées dynamiquement ici -->
+            </select>
+
+
+            <!-- Le bouton de soumission du formulaire -->
+            <button class="BtnSubmit" type="submit">Filtrer</button>
+          </form>
+        </div>
+        <!-- La table pour afficher les résultats -->
+        <table id="resultatsVert">
+          <!-- Les résultats seront affichés ici -->
+        </table>
+
+
+
+      </div>
+      <div class="tab-content">
+        <h3> Activiter 💪</h3>
+        <!-- activiter -->
+        <div class="filtre">
+          <form id="monFormulaireActiviter">
+            <label for="choixNombreActiviter">Arrondissement :</label>
+            <select id="choixNombreActiviter" name="choixNombreActiviter">
+              <!-- Options pour les arrondissements -->
+              <option value="arrondissement">arrondissement</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <!-- Ajoutez d'autres options au besoin -->
+            </select>
+
+            <label for="choixTypeActiviter">Catégorie :</label>
+            <select id="choixTypeActiviter" name="choixTypeActiviter">
+              <option value="Tous">Tous</option>
+              <!-- Les options de type seront générées dynamiquement ici -->
+            </select>
+            <label for="choixPayantActiviter">Payant :</label>
+            <select id="choixPayantActiviter" name="choixPayantActiviter">
+              <option value="Tous">Tous</option>
+              <!-- Les options de type seront générées dynamiquement ici -->
+            </select>
+
+            <!-- Le bouton de soumission du formulaire -->
+            <button class="BtnSubmit" type="submit">Filtrer</button>
+          </form>
+        </div>
+        <!-- La table pour afficher les résultats -->
+        <table id="resultatsActiviter">
+          <!-- Les résultats seront affichés ici -->
+        </table>
+  </main>
+  <footer>
+    <p>©Baptiste ROY 2023</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
+</div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
